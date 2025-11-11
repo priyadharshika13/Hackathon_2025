@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>StaffTract.AI - AI-Powered Workforce Management</title>
+    <script type="module" crossorigin src="./assets/index-Ykbfni9A.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-Dp7P83DM.css">
+  </head>
+  <body>
+    <div id="root"></div>
+    <script>
+      // --- Diagnostic Log for Asset Path Issues ---
+      const scripts = [...document.getElementsByTagName('script')];
+      const assets = scripts.map(s => s.src).filter(Boolean);
+      console.log(" Loaded JS Assets:", assets);
+
+      const cssLinks = [...document.getElementsByTagName('link')];
+      const styles = cssLinks.map(l => l.href).filter(Boolean);
+      console.log("Loaded CSS Assets:", styles);
+
+      // Try to detect if assets failed to load
+      window.addEventListener('error', (e) => {
+        if (e.target && (e.target.tagName === 'SCRIPT' || e.target.tagName === 'LINK')) {
+          console.warn('Failed to load asset:', e.target.src || e.target.href);
+        }
+      }, true);
+
+      console.log("Diagnostic script active - check console for asset loading details");
+    </script>
+  </body>
+</html>
